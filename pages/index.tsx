@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { auth } from '../lib/firebase';
 
+// Did this change anything?
 export default function Home() {
   return (
     <>
