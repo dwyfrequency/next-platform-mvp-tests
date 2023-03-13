@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { auth } from "../lib/firebase";
+import Head from 'next/head';
+import { auth } from '../lib/firebase';
 
 export default function Home() {
   return (
