@@ -3,8 +3,8 @@ name: Test Next.js Builds
 on: pull_request
 
 jobs:
-  doc-check:
-    name: Check if reference docs have changed
+  build-check:
+    name: Check if Next.js app builds
     runs-on: ubuntu-latest
 
     steps:
