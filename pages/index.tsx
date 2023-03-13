@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { auth } from '../lib/firebase';
 
+// Do we need the head component?
 export default function Home() {
   return (
     <>
