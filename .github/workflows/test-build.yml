@@ -1,6 +1,9 @@
 name: Test Next.js Builds
 
-on: pull_request
+on:
+  schedule:
+    # Runs everyday at 17:30 UTC
+    - cron: '30 17 * * *'
 
 jobs:
   build-check:
