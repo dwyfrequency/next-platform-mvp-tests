@@ -72,16 +72,6 @@ body:
         'This could be a description, log/console output, etc.'
     validations:
       required: true
-  - type: input
-    id: browser-version
-    attributes:
-      label: Browser Version
-      description: Describe your browser version
-      placeholder: |
-        ' What happened? How can we make the problem occur?'
-        'This could be a description, log/console output, etc.'
-    validations:
-      required: true
   - type: textarea
     id: logs
     attributes:
