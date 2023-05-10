@@ -31,12 +31,6 @@ jobs:
           yarn
       - name: Run build for Next.js app
         run: yarn build
-      - name: Tests succeeded
-        if: success()
-        run: node scripts/ci/notify-test-result.js success
-        env:
-          WEBHOOK_URL: ${{ secrets.JSCORE_CHAT_WEBHOOK_URL }}
-          FIREBASE_CANARY_VERSION: ${{ steps.get-version.outputs.CANARY_VERSION }}
       - name: Tests failed
         if: failure()
         run: node scripts/ci/notify-test-result.js fail
