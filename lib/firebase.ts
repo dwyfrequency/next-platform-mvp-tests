@@ -11,6 +11,11 @@ import {
 } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
+export const testAccount = {
+  email: 'totpuser-donotdelete@test.com',
+  password: 'password',
+};
+
 // App's Firebase configuration
 const firebaseConfig = {
   apiKey: 'AIzaSyAMiCFxC_26ex8ZD3q0zaR7KWMN8tYMZC0',
@@ -22,7 +27,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+export const app =
+  getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const firestore = getFirestore(app);
 export const storage = getStorage(app);
